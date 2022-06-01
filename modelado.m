@@ -68,7 +68,7 @@ v05=R05*v55; %3x3 3x1 = 3x1
 w05=R05*w55;
 
 % Jacobiano absoluto (dado que no se controla la orientación se eliminan
-% las velocidades angulares
+% las velocidades angulares)
 J05=[diff(v05(1),q1p) diff(v05(1),q2p) diff(v05(1),q3p) diff(v05(1),q4p);...
      diff(v05(2),q1p) diff(v05(2),q2p) diff(v05(2),q3p) diff(v05(2),q4p);...
      diff(v05(3),q1p) diff(v05(3),q2p) diff(v05(3),q3p) diff(v05(3),q4p)];
