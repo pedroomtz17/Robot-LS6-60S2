@@ -2,7 +2,7 @@
 global l1 l2 l3 l4 m1 m2 m3 m4 lc1 lc2 lc3 lc4 Ixx1 Iyy1 Izz1 Ixx2 Iyy2 Izz2 Ixx3 Iyy3 Izz3 Ixx4 Iyy4 Izz4 g
  
 %Tamaño de eslabones en [m]
-l1=0.1665; l2=0.325; l3=0.275 ;l4=0.4;
+l1=0.178; l2=0.325; l3=0.275 ;l4=0.4;
 
 lc1=l1/2;
 lc2=l2/2;
