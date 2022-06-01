@@ -26,13 +26,13 @@ plot3(x,y,z,'LineWidth',2);
 hold on
 
 %Trazo de sistemas de referencia
-frame(eye(4),'r',0.1)
-frame(S01,'g',0.1)
-frame(S02,'b',0.1)
-%frame(S03,'r',0.1)
-frame(S04,'g',0.1)
-frame(S05,'c',0.1)
-grid on
+% frame(eye(4),'r',0.1)
+% frame(S01,'g',0.1)
+% frame(S02,'b',0.1)
+% %frame(S03,'r',0.1)
+% frame(S04,'g',0.1)
+% frame(S05,'c',0.1)
+% grid on
 
 n=0.8;
 axis([-n n -n n -n n]) 

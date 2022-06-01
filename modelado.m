@@ -68,12 +68,37 @@ v05=R05*v55; %3x3 3x1 = 3x1
 w05=R05*w55;
 
 % Jacobiano absoluto (dado que no se controla la orientación se eliminan
+
 % las velocidades angulares)
-J05=[diff(v05(1),q1p) diff(v05(1),q2p) diff(v05(1),q3p) diff(v05(1),q4p);...
+J05b=[diff(v05(1),q1p) diff(v05(1),q2p) diff(v05(1),q3p) diff(v05(1),q4p);...
      diff(v05(2),q1p) diff(v05(2),q2p) diff(v05(2),q3p) diff(v05(2),q4p);...
-     diff(v05(3),q1p) diff(v05(3),q2p) diff(v05(3),q3p) diff(v05(3),q4p)];
+     diff(v05(3),q1p) diff(v05(3),q2p) diff(v05(3),q3p) diff(v05(3),q4p);...
+     ];
+
+
+% La ultima columna del J05 son 0s, indicando que no hay velocidades en el 
+% efector final
+% Al J05 (3x4) se le eliminó la 4ta columna para hacerla cuadrada
+
+J05=[diff(v05(1),q1p) diff(v05(1),q2p) diff(v05(1),q3p) ;...
+     diff(v05(2),q1p) diff(v05(2),q2p) diff(v05(2),q3p) ;...
+     diff(v05(3),q1p) diff(v05(3),q2p) diff(v05(3),q3p) ;...
+     ];
+DET=simplify(det(J05));
 
 rango=rank(J05); 
+
+%Jacobiano inverso
+J05Inv=inv(J05);
+
+%Velocidad directa 
+qp=[q1p;q2p;q3p];
+xep=J05*qp;
+
+%Calculo de la aceleracion
+q=[q1;q2;q3];
+
+J05p=diff_matrix(J05,qp,q);
 
 %% Modelado dinámico
 syms q1pp q2pp q3pp q4pp lc1 lc2 lc3 lc4 m1 m2 m3 m4 Ixx1 Iyy1 Izz1 Ixx2 Iyy2 Izz2 Ixx3 Iyy3 Izz3 Ixx4 Iyy4 Izz4 g
