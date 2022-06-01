@@ -22,18 +22,18 @@ x=[0 S01(1,4) S02(1,4) S03(1,4) S04(1,4) S05(1,4)];
 y=[0 S01(2,4) S02(2,4) S03(2,4) S04(2,4) S05(2,4)];
 z=[0 S01(3,4) S02(3,4) S03(3,4) S04(3,4) S05(3,4)];
 
-plot3(x,y,z,'LineWidth',2);
+plot3(x,y,z,'color','#7E2F8E','linewidth',4);
 hold on
 
 %Trazo de sistemas de referencia
-% frame(eye(4),'r',0.1)
+frame(eye(4),'r',0.1)
 % frame(S01,'g',0.1)
 % frame(S02,'b',0.1)
 % %frame(S03,'r',0.1)
 % frame(S04,'g',0.1)
-% frame(S05,'c',0.1)
-% grid on
-
+frame(S05,'c',0.1)
+grid on
+title('Epson SCARA LS6-60S2 Robot');
 n=0.8;
 axis([-n n -n n -n n]) 
 
