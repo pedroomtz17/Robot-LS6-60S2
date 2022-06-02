@@ -19,7 +19,7 @@ G =[     0;
      
 tau=[t1;t2;t3;t4];
 %vector columna de fricciones (energía disipativa al presentarse velocidad)
-f=[0.123*q1p;0.123*q2p;2*q3p;0.123*q4p];
+f=[1*q1p;0.123*q2p;2*q3p;0.123*q4p];
 % qpp=inv(M)*(tau-C-G);
 qpp=inv(M)*(tau-f-C-G);
 
