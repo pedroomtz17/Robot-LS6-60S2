@@ -3,10 +3,10 @@ clc; clear all;close all;
 parametros
 
 global xe ye ze gamma
-xe=-0.5547;ye=-0.104;ze=-0.1464;gamma=-pi; %Posición 3
+%xe=-0.5547;ye=-0.104;ze=-0.1464;gamma=-pi; %Posición 3
 
 q0=[0,0,0.2,0];
-plot3(xe,ye,ze,'r*');
+%plot3(xe,ye,ze,'r*');
 
 for i=0:1:3  
     if(i==0) %Posición inicial
