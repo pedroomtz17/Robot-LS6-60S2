@@ -221,11 +221,20 @@ dKE=[diff(KE,q1);diff(KE,q2);diff(KE,q3);diff(KE,q4)];
 
 C=Mp*qp-dKE;
 
+%% Fuerza externa
+syms fx05 fy05 fz05
+
+F=[fx05;fy05;fz05];
+
+Fext=simplify(transpose(J05)*F);
+
 % Evaluar las matrices
 parametros
 
 M=simplify(eval(M));
 C=simplify(eval(C));
 G=eval(G);
+
+
 
 toc
