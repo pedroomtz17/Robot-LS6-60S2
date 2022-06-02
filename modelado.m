@@ -224,8 +224,8 @@ C=Mp*qp-dKE;
 % Evaluar las matrices
 parametros
 
-M=eval(M);
-C=eval(C);
+M=simplify(eval(M));
+C=simplify(eval(C));
 G=eval(G);
 
 toc
