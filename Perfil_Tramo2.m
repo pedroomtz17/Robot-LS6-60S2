@@ -184,6 +184,13 @@ for i=1:1:length(x)
      
 end
 
+% q11 = transpose([time;rad2deg(q1)]);
+% q12 = transpose([time;rad2deg(q2)]);
+% q13 = transpose([time;rad2deg(q3)]);
+q11 = transpose([time;q1]);
+q12 = transpose([time;q2]);
+q13 = transpose([time;q3]);
+
 %Graficas de posición de las juntas
 figure(5)
 plot(time,rad2deg(q1),'r');
