@@ -2,14 +2,14 @@
 tic
 clc; close all; clear all;
 %DHC(alfa, a, theta, d)
-syms l1 l2 l3 l4 q1 q2 q3 q4 xe ye ze
+syms l1 l2 l3 l4 l5 q1 q2 q3 q4 xe ye ze
 
 S01=DHC(0,0,q1,l1);
 S12=DHC(0,l2,q2,0);
-S23=DHC(0,l3,0,0.05);
+S23=DHC(0,l3,0,l4);
 %La junta 34 es prismática
 S34=DHC(0,0,q4,q3);
-S45=DHC(0,0,0,-l4);
+S45=DHC(0,0,0,-l5);
 
 %% Cinemática directa
 CD=S01*S12*S23*S34*S45;
@@ -20,9 +20,30 @@ S03=S01*S12*S23;
 S04=S01*S12*S23*S34;
 S05=S01*S12*S23*S34*S45;
 
-eq1=CD(1,4)-xe; %CD(1,4)=xe, para método númerico se despeja
-eq2=CD(2,4)-ye;
-eq3=CD(3,4)-ze;
+%% Cinemática Inversa
+syms xe ye ze alpha betha gamma
+P05=transl(xe,ye,ze)*rotz(gamma)*roty(betha)*rotx(alpha);
+eq=CD-P05;
+
+eq1=eq(1,1); %CD(1,4)=xe, para método númerico se despeja
+eq2=eq(1,2);
+eq3=eq(1,3);
+eq4=eq(1,4);
+
+eq5=eq(2,1);
+eq6=eq(2,2);
+eq7=eq(2,3);
+eq8=eq(2,4);
+
+eq9=eq(3,1);
+eq10=eq(3,2);
+eq11=eq(3,3);
+eq12=eq(3,4);
+
+ eq13=eq(4,1);
+ eq14=eq(4,2);
+ eq15=eq(4,3);
+ eq16=eq(4,4);
 
 %% Modelo Cinemático Diferencial
 % Matrices de rotacion
@@ -47,7 +68,7 @@ Z=[0;0;1]; % Se establece que la rotación ocurre sólo en el eje Z
 v00=[0;0;0];  %Para robots moviles se tiene valores !=0
 w00=[0;0;0]; %En sistema 0 porque está empotrado
 %En sistema 1
-v11=transpose(R01)*(v00+cross(w00,P01)); %La suma de la velocidad en el sistema 1 MÁS proyección de velocidad (angular y lineal) previa
+v11=transpose(R01)*(v00+cross(w00,P01)); %La suma de la velocidad en el sistema 1 M�?S proyección de velocidad (angular y lineal) previa
 w11=transpose(R01)*w00+q1p*Z; %La suma de la proyección de la velocidad angular previa + la proyección en el eje Z (stándar para rotaciones)
 %En sistema 2
 v22=transpose(R12)*(v11+cross(w11,P12)); 
@@ -74,8 +95,7 @@ J05b=[diff(v05(1),q1p) diff(v05(1),q2p) diff(v05(1),q3p) diff(v05(1),q4p);...
      diff(v05(2),q1p) diff(v05(2),q2p) diff(v05(2),q3p) diff(v05(2),q4p);...
      diff(v05(3),q1p) diff(v05(3),q2p) diff(v05(3),q3p) diff(v05(3),q4p);...
      ];
-
-
+ 
 % La ultima columna del J05 son 0s, indicando que no hay velocidades en el 
 % efector final
 % Al J05 (3x4) se le eliminó la 4ta columna para hacerla cuadrada
@@ -101,8 +121,8 @@ q=[q1;q2;q3];
 J05p=diff_matrix(J05,qp,q);
 
 %% Modelado dinámico
-syms q1pp q2pp q3pp q4pp lc1 lc2 lc3 lc4 m1 m2 m3 m4 Ixx1 Iyy1 Izz1 Ixx2 Iyy2 Izz2 Ixx3 Iyy3 Izz3 Ixx4 Iyy4 Izz4 g
-
+syms q1pp q2pp q3pp q4pp m1 m2 m3 m4 Ixx1 Iyy1 Izz1 Ixx2 Iyy2 Izz2 Ixx3 Iyy3 Izz3 Ixx4 Iyy4 Izz4 g
+syms c1x c1y c1z c2x c2y c2z c3x c3y c3z c4x c4y c4z %centros de masa
 %Matrices de inercia
 I1=[Ixx1,0,0;...
     0,Iyy1,0;...
@@ -121,10 +141,11 @@ I4=[Ixx4,0,0;...
     0,0,Izz4];
 
 %Vectores de posción a los centros de masa
-P1_cm1=subs(P01,l1,lc1);
-P2_cm2=subs(P23,l2,lc2);
-P3_cm3=subs(P34,l3,lc3);
-P4_cm4=subs(P45,l4,lc4);
+P1_cm1=[c1x;c1y;c1z];
+P2_cm2=[c2x;c2y;c2z];
+P3_cm3=[c3x;c3y;c3z];
+P4_cm4=[c4x;c4y;c4z];
+
 
 
 %Cálculo de la energía cinética
@@ -136,10 +157,10 @@ k4=1/2*m4*transpose(v44+cross(w44,P4_cm4))*(v44+cross(w44,P4_cm4))+1/2*transpose
 kt=k1+k2+k3+k4;
 
 % Alturas a los centros de masa
-h1=subs(S02(3,4),l1,lc1);
-h2=subs(S03(3,4),l2,lc2);
-h3=subs(S04(3,4),l3,lc3);
-h4=subs(S05(3,4),l4,lc4);
+h1=subs(S02(3,4),l1,c1z);
+h2=subs(S03(3,4),l2,c2z);
+h3=subs(S04(3,4),l3,c3z);
+h4=subs(S05(3,4),l4,c4z);
 
 %Energía potencial
 u1=m1*g*h1;
@@ -203,8 +224,8 @@ C=Mp*qp-dKE;
 % Evaluar las matrices
 parametros
 
-M=eval(M);
-C=eval(C);
+M=simplify(eval(M));
+C=simplify(eval(C));
 G=eval(G);
 
 toc
