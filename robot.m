@@ -1,13 +1,13 @@
 function []=robot(q1,q2,q3,q4)
-global l1 l2 l3 l4
+global l1 l2 l3 l4 l5
 parametros
 
 S01=DHC(0,0,q1,l1);
 S12=DHC(0,l2,q2,0);
-S23=DHC(0,l3,0,0.05);
+S23=DHC(0,l3,0,l4);
 %La junta 34 es prismática
 S34=DHC(0,0,q4,q3);
-S45=DHC(0,0,0,-l4);
+S45=DHC(0,0,0,-l5);
 
 CD=S01*S12*S23*S34*S45;
 
