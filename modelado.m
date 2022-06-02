@@ -224,9 +224,13 @@ C=Mp*qp-dKE;
 %% Fuerza externa
 syms fx05 fy05 fz05
 
+l1=0.178+0.025; l2=0.325; l3=0.275; l4=0.013+0.025; l5=0.4097;
+ 
+
 F=[fx05;fy05;fz05];
 
-Fext=simplify(transpose(J05)*F);
+Fext=simplify(transpose(J05b)*F);
+
 
 % Evaluar las matrices
 parametros

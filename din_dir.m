@@ -20,11 +20,10 @@ G =[     0;
 tau=[t1;t2;t3;t4];
 
 %Fuerza externa
-Fext = [fx05*((sin(q4)*(l3 + l2*cos(q2)) + l2*cos(q4)*sin(q2))*(cos(q4)*(cos(q1)*cos(q2) - sin(q1)*sin(q2)) - sin(q4)*(cos(q1)*sin(q2) + cos(q2)*sin(q1))) - (cos(q4)*(l3 + l2*cos(q2)) - l2*sin(q2)*sin(q4))*(cos(q4)*(cos(q1)*sin(q2) + cos(q2)*sin(q1)) + sin(q4)*(cos(q1)*cos(q2) - sin(q1)*sin(q2)))) + fy05*((sin(q4)*(l3 + l2*cos(q2)) + l2*cos(q4)*sin(q2))*(cos(q4)*(cos(q1)*sin(q2) + cos(q2)*sin(q1)) + sin(q4)*(cos(q1)*cos(q2) - sin(q1)*sin(q2))) + (cos(q4)*(l3 + l2*cos(q2)) - l2*sin(q2)*sin(q4))*(cos(q4)*(cos(q1)*cos(q2) - sin(q1)*sin(q2)) - sin(q4)*(cos(q1)*sin(q2) + cos(q2)*sin(q1))));
-                                                                                                                                                         fy05*(l3*cos(q4)*(cos(q4)*(cos(q1)*cos(q2) - sin(q1)*sin(q2)) - sin(q4)*(cos(q1)*sin(q2) + cos(q2)*sin(q1))) + l3*sin(q4)*(cos(q4)*(cos(q1)*sin(q2) + cos(q2)*sin(q1)) + sin(q4)*(cos(q1)*cos(q2) - sin(q1)*sin(q2)))) - fx05*(l3*cos(q4)*(cos(q4)*(cos(q1)*sin(q2) + cos(q2)*sin(q1)) + sin(q4)*(cos(q1)*cos(q2) - sin(q1)*sin(q2))) - l3*sin(q4)*(cos(q4)*(cos(q1)*cos(q2) - sin(q1)*sin(q2)) - sin(q4)*(cos(q1)*sin(q2) + cos(q2)*sin(q1))));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    fz05];
- 
-    
+Fext = [fy05*0.325*cos(q1) - fx05*0.325*sin(q1) + fy05*0.275*cos(q1 + q2) - fx05*0.275*sin(q1 + q2);
+                                                  fy05*0.275*cos(q1 + q2) - fx05*0.275*sin(q1 + q2);
+                                                                                               fz05;
+                                                                                                 0];
 %vector columna de fricciones (energía disipativa al presentarse velocidad)
 f=[1*q1p;0.123*q2p;2*q3p;0.123*q4p];
 % qpp=inv(M)*(tau-C-G);
