@@ -12,7 +12,7 @@ c=1;
 
 %Posiciones iniciales y finales
 pin=[0;0.5;-0.154];
-pf=[-0.544;-0.104;0];
+pf=[-0.5547;-0.104;0];
 
 %Orientaciones iniciales y finales
 ai=[0;0;pi];
@@ -140,7 +140,7 @@ figure(4)
 global xe ye ze gamma
 
 c=1;
-q0=[1.5701,0,0.1687,0];%condición inicial
+q0=[pi,0,0,0];%condición inicial
 for i=1:1:length(x)
   clf
   %Trayectoria de efector
