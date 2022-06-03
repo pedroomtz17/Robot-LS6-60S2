@@ -211,7 +211,7 @@ En las siguientes gráficas se observa que el sistema de nuevo es inestable cuan
 
 Simulación 
 
-En la simulación se muestra el efecto del torque de 5 [Nm] en la articulación q1, el cual vuelve al sistema inestable, ya que el rango de las curvas de las variables articulares, velocidad y aceleración aumentan, es decir, tienen al infinito. Además se observa que se generan singularidades, ya que algunos eslabones colapsan.
+En la simulación se muestra el efecto del torque de 5 [Nm] en la articulación q1, el cual genera la rotación del robot. También se puede observar que se generan singularidades, ya que algunos eslabones colapsan.
 
 <img src="https://media.giphy.com/media/sWzIVadP0aevM2ay5Y/giphy.gif" width="560" height="420">
 
@@ -253,13 +253,19 @@ Se concluye que, para la trayectoria propuesta en la cinemática, los torques so
 
 ## Puntos de Equilibrio
 
+ Diagrama de bloques en SIMULINK
+
 <img src="/Images/PuntoEquilibrio_DD.JPG" width="740" height="600">
 
 Gráficas
 
+El sistema de equilibrio representa el estado en el que toda la energía del sistema se disipa, es decir, cuando las variables articulares, velocidad y aceleración son cero. En las siguientes gráficas se muestra dicho comportamiento, en cual fue necesario aplicar un torque de 12.0663 [Nm] en la articulación q3 para lograrlo (ver el diagrama de bloques previo).
+
 <img src="/Images/PuntoEquilibrio_DD_Graficas.JPG">
 
 Simulación 
+
+Postura estática
 
 <img src="/Images/PuntoEquilibrio_DD_Robot.JPG" width="540" height="400">
 
