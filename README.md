@@ -59,10 +59,10 @@ J05 =
   
   ## Dinámica directa
   
-  a) Modelo con la postura cero (cuando todas las variables articulares valen cero grados) y
+a) Modelo con la postura cero (cuando todas las variables articulares valen cero grados) y
 un torque de entrada cero
   
-<img src="/Images/PosturaCero_CD.JPG" width="640" height="500">
+<img src="/Images/PosturaCero_CD.JPG" width="740" height="600">
 
 Gráficas
 
@@ -72,4 +72,14 @@ Simulación
 
 <img src="https://media.giphy.com/media/gz8cSD9ccm9elGBBkk/giphy.gif" width="560" height="420">
 
-b) ) Modelo con un torque diferente de cero en la primera junta
+b) Modelo con un torque diferente de cero en la primera junta
+
+<img src="/Images/TorqueQ1_DD.JPG" width="740" height="600">
+
+Gráficas
+
+<img src="/Images/TorqueQ1_DD_Graficas.JPG">
+
+Simulación 
+
+<img src="https://media.giphy.com/media/sWzIVadP0aevM2ay5Y/giphy.gif" width="560" height="420">
