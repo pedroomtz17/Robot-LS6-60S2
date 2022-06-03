@@ -37,3 +37,16 @@ Comprobación
         xe=-0.5547; ye=-0.104; ze=-0.1464; gamma=-pi;
  ```
 <img src="/Images/Position4.jpg" width="540" height="400">
+
+## Jacobiano por el método de propagación de velocidades
+
+```sh
+J05 = 
+[ - l3*sin(q1 + q2) - l2*sin(q1), -l3*sin(q1 + q2), 0]
+[   l3*cos(q1 + q2) + l2*cos(q1),  l3*cos(q1 + q2), 0]
+[                              0,                0, 1]
+ ```
+  ## Determinante
+ ```sh
+ DET = l2*l3*sin(q2)
+  ```
