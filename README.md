@@ -32,7 +32,7 @@
  ```
 ### Vector de friccion
 ```sh
-        f=[1*q1p;0.123*q2p;2*q3p;0.123*q4p];
+        f=[0.3*q1p;0.3*q2p;0.3*q3p;0.3*q4p];
  ```
 ## Dinámica Inversa
 Debido a que el fabricante no proporciona especificaciones de los motores, se propusieron las siguientes saturaciones:
