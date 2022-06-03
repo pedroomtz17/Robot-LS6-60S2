@@ -18,22 +18,22 @@ Comprobación
 ```sh
         xe=0; ye=0.5; ze=0; gamma=pi;
  ```
-<img src="/Images/Coordenada_PosicionInicial.jpg" width="540" height="400">
+<img src="/Images/Position1.jpg" width="540" height="400">
 
 - Posición 2
 ```sh
         xe=0; ye=0.5; ze=-0.154; gamma=pi;
  ```
-<img src="/Images/Coordenada_PosicionIntermedia.jpg" width="540" height="400">
+<img src="/Images/Position2.jpg" width="540" height="400">
 
 - Posición 3
 ```sh
         xe=-0.5547; ye=-0.104; ze=0; gamma=-pi;
  ```
-<img src="/Images/Coordenada_PosiciFinal.jpg" width="540" height="400">
+<img src="/Images/Position3.jpg" width="540" height="400">
 
 - Posición 4
 ```sh
         xe=-0.5547; ye=-0.104; ze=-0.1464; gamma=-pi;
  ```
-<img src="/Images/Coordenada_PosiciFinal.jpg" width="540" height="400">
+<img src="/Images/Position4.jpg" width="540" height="400">
