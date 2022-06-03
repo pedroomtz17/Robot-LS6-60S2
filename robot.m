@@ -36,7 +36,8 @@ frame(eye(4),'r',0.1)
 frame(S05,'c',0.1)
 grid on
 title('Epson SCARA LS6-60S2 Robot');
-n=0.8;
-axis([-n n -n n -n n]) 
-
+n=0.6;
+axis([-n n -n n -n n])
+% axis([-0.7 0.2 -0.4 0.1 -0.2 0.4])
+% campos([-0.7 -0.2 0.4]);
 end
