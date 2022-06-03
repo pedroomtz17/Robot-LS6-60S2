@@ -50,7 +50,7 @@ plot(time,a2,'g*');
 hold on
 plot(time,a3,'b*');
 hold on
-title('Posición espacio cartesiano T1')
+title('Posición espacio cartesiano T2')
 xlabel('Tiempo[s]')
 ylabel('Posición[m] Orientacion[rad]')
 legend('x','y','z','\alpha','\beta','\gamma','orientation','horizontal','location','SouthEast')
@@ -89,7 +89,7 @@ plot(time,a2p,'g*');
 hold on
 plot(time,a3p,'b*');
 hold on
-title('Velocidad espacio cartesiano T1')
+title('Velocidad espacio cartesiano T2')
 xlabel('Tiempo [s]')
 ylabel('Velocidad [m/s]-[rad/s]')
 legend('x\prime','y\prime','z\prime','\alpha\prime','\beta\prime','\gamma\prime',...
@@ -128,7 +128,7 @@ plot(time,a2pp,'g*');
 hold on
 plot(time,a3pp,'b*');
 hold on
-title('Aceleración espacio cartesiano T1')
+title('Aceleración espacio cartesiano T2')
 xlabel('Tiempo [s]')
 ylabel('Aceleración [m/s^2]-[rad/s^2]')
 legend('x\prime\prime','y\prime\prime','z\prime\prime',...
@@ -197,7 +197,7 @@ plot(time,rad2deg(q1),'r');
 hold on
 plot(time,rad2deg(q2),'g');
 plot(time,rad2deg(q3),'b');
-title('Espacio de juntas en posición T1');
+title('Espacio de juntas en posición T2');
 xlabel('Tiempo [s]');
 ylabel('Grados');
 legend('q1','q2','q3');
@@ -214,7 +214,7 @@ plot(time,rad2deg(q1p),'r');
 hold on
 plot(time,rad2deg(q2p),'g');
 plot(time,rad2deg(q3p),'b');
-title('Espacio de juntas en velocidad T1');
+title('Espacio de juntas en velocidad T2');
 xlabel('Tiempo [s]');
 ylabel('Grados/s');
 legend('q1p','q2p','q3p');
@@ -226,7 +226,7 @@ plot(time,rad2deg(q1pp),'r');
 hold on
 plot(time,rad2deg(q2pp),'g');
 plot(time,rad2deg(q3pp),'b');
-title('Espacio de juntas en aceleración T1');
+title('Espacio de juntas en aceleración T2');
 xlabel('Tiempo [s]');
 ylabel('Grados/seg^2');
 legend('q1pp','q2pp','q3pp');
