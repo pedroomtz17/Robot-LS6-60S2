@@ -3,7 +3,7 @@
 ## Parámetros Denavit-Hartenberg 
 
 
-<img src="/imagenes/ParametrosDH.jpg" width="761" height="585">
+<img src="/Images/ParametrosDH.JPG" width="761" height="585">
 
 ## Cinemática Directa
 ```sh
