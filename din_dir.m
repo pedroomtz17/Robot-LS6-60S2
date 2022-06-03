@@ -25,9 +25,9 @@ Fext = [fy05*0.325*cos(q1) - fx05*0.325*sin(q1) + fy05*0.275*cos(q1 + q2) - fx05
                                                                                                fz05;
                                                                                                  0];
 %vector columna de fricciones (energía disipativa al presentarse velocidad)
-f=[1*q1p;0.123*q2p;2*q3p;0.123*q4p];
-% qpp=inv(M)*(tau-C-G);
-qpp=inv(M)*(tau-f+Fext-C-G);
+% f=[1*q1p;0.123*q2p;2*q3p;0.123*q4p];
+qpp=inv(M)*(tau-C-G);
+% qpp=inv(M)*(tau-f+Fext-C-G);
 
 
 end
