@@ -55,3 +55,7 @@ J05 =
  ```sh
  DET = l2*l3*sin(q2)
   ```
+  
+  
+  ## Dinámica directa
+  
