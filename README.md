@@ -221,4 +221,4 @@ d)Fuerza externa Fy=200N
 <img src="Images/AcelArt_Fy.jpg" width="560" height="420">
 
 El movimiento es el esperado, la fuerza en Y provoca que el robot pierda su estabilidad, tambien se nota que en todas las juntas tienen aceleración excepto q3. 
->>>>>>> ReadmeDiego
+
