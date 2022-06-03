@@ -293,13 +293,13 @@ a)Fuerza externa Fz=200N
 
 <img src="https://media.giphy.com/media/knEwCh5TIdIgGHEcgs/giphy.gif" width="560" height="420">
 
-<img src="Images/AcelArt_Fz.jpg" width="560" height="420">
+<img src="Images/AcelArt_Fz.jpg" width="740" height="600">
 
 El movimiento es el esperado, el eslabon 3 se mueve en dirección Z rápidamente a causa de la gran fuerza que actúa y en la gráfica de aceleraciones se puede ver la aceleración inicial para despues llegar a una velocidad constante.
 
 b)Fuerza externa Fx=200N
 
-<img src="Images/FuerzaX200.JPG" width="560" height="420">
+<img src="Images/FuerzaX200.JPG" width="740" height="600">
 
 <img src="Images/FX200_robot.jpg" width="560" height="420">
 
