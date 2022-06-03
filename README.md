@@ -85,3 +85,13 @@ Simulación
 <img src="https://media.giphy.com/media/sWzIVadP0aevM2ay5Y/giphy.gif" width="560" height="420">
 
 ## Puntos de Equilibrio
+
+<img src="/Images/PuntoEquilibrio_DD.JPG" width="740" height="600">
+
+Gráficas
+
+<img src="/Images/PuntoEquilibrio_DD_Graficas.JPG">
+
+Simulación 
+
+<img src="/Images/PuntoEquilibrio_DD_Robot.JPG" width="540" height="400">
