@@ -40,24 +40,69 @@ Debido a que el fabricante no proporciona especificaciones de los motores, se pr
  Para q2 [25, -25]
  para q3 [16, -16]
  Para q4 [5, -5]
+ 
+ <img src="/Images/Dinv.JPG" width="540" height="400">
+ 
 ### Evaluación Tramo 1
 
+<img src="/Images/Dinv_Tr1.jpg" width="540" height="400">
+
+Para el tramo 1 de la trayectoria propuesta el unico torque visible es el de q3, lo cual es correcto pues solo existe un desplazamiento en Z.
+
 ### Evaluación Tramo 2
+
+<img src="/Images/Dinv_Tr2.jpg" width="540" height="400">
+
+Para el tramo 2 se ven distintos valores de torques para los 3 motores q1, q2 y q3. (q4 no actúa en la trayectoria del robot).
+
 ### Evaluación Tramo 3
+
+<img src="/Images/Dinv_Tr3.jpg" width="540" height="400">
+
+Para el tramo 3 de la trayectoria propuesta el unico torque visible es el de q3, lo cual es correcto pues solo existe un desplazamiento en Z.
+
 ### Evaluación Tramo 4
+
+<img src="/Images/Dinv_Tr4.jpg" width="540" height="400">
+
+Para el tramo 4 se ven distintos valores de torques para los 3 motores q1, q2 y q3. (q4 no actúa en la trayectoria del robot).
 
 Se concluye que, para la trayectoria propuesta en la cinemática, los torques son correctos y están dentro de las magnitudes soportadas por los motores. 
 
 ### Fuerzas externas
+
 a)Fuerza externa Fz=200N
 
-El movimiento es el esperado, el eslabon 3 se mueve en dirección Z rápidamente a causa de la gran fuerza que actúa.
+<img src="https://media.giphy.com/media/knEwCh5TIdIgGHEcgs/giphy.gif" width="560" height="420">
+
+<img src="Images/AcelArt_Fz.jpg" width="560" height="420">
+
+El movimiento es el esperado, el eslabon 3 se mueve en dirección Z rápidamente a causa de la gran fuerza que actúa y en la gráfica de aceleraciones se puede ver la aceleración inicial para despues llegar a una velocidad constante.
+
 b)Fuerza externa Fx=200N
 
-El movimiento esperado era un movimiento en X, sin embargo, no se mueve ni un poco y esto se puede deber a las restricciones que tiene el modelo, pues si tuviera movimiento en X el robot estaría "libre".
+<img src="Images/FuerzaX200.JPG.jpg" width="560" height="420">
+
+<img src="Images/FX200.JPG.jpg" width="560" height="420">
+
+<img src="Images/AcelArt_Fx.jpg" width="560" height="420">
+
+El movimiento esperado era un movimiento en X, sin embargo, no se mueve ni un poco y esto se puede deber a las restricciones que tiene el modelo, pues si tuviera movimiento en X el robot estaría "libre", en la gráfica de aceleraciones como se puede ver no existe aceleración en ningun motor.
+
 c)Fuerza externa Fx=20000000N
 
+<img src="Images/FuerzaX200000.JPG" width="560" height="420">
+
+<img src="Images/FX200.JPG.jpg" width="560" height="420">
+
+<img src="Images/AcelArt_Fx.jpg" width="560" height="420">
+
 A pesar de que se aumenta demasiado el valor de la fuerza, no hay movimiento, por lo tanto se optó por aplicar una fuerza en Y.
+
 d)Fuerza externa Fy=200N
 
-El movimiento es el esperado, la fuerza en Y provoca que el robot pierda su estabilidad. 
+<img src="https://media.giphy.com/media/wqpo6YDg5xOMYlRjZB/giphy.gif" width="560" height="420">
+
+<img src="Images/AcelArt_Fy.jpg" width="560" height="420">
+
+El movimiento es el esperado, la fuerza en Y provoca que el robot pierda su estabilidad, tambien se nota que en todas las juntas tienen aceleración excepto q3. 
