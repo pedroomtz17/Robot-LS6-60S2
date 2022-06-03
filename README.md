@@ -61,6 +61,10 @@ J05 =
   
 En la ecuación del determinante se observa que solo está en función de la variable articular q2, por lo que se debe tener especial cuidado en dicha articulación al momento definir una trayectoría del robot, ya que se pueden generar singularidades.
 
+Las singularidades se presentan en los siguientes casos:
+
+  <img src="/Images/Singularidad.jpg">
+
  ```sh
  DET = l2*l3*sin(q2)
   ```
@@ -176,14 +180,20 @@ En la ecuación del determinante se observa que solo está en función de la var
   
 a) Modelo con la postura cero (cuando todas las variables articulares valen cero grados) y
 un torque de entrada cero
-  
+ 
+ Diagrama de bloques en SIMULINK
+ 
 <img src="/Images/PosturaCero_CD.JPG" width="740" height="600">
 
 Gráficas
 
+En las siguientes gráficas se observa que el sistema es inestable, al colocar el robot en la postura cero y cuando el torque en los motores es cero. Esto se puede deber al efecto de la gravedad y porque no se  consideró ningún elemento que disipe energía en las articulaciones.
+
 <img src="/Images/PosturaCero_CD_Graficas.JPG">
 
 Simulación 
+
+En la siguiente simulación se observa el comportamiento del robot indicado en las gráficas previas.  Notar que las variables articulares q1, q2 y q4 se mantienen en cero, mientras que q3 tiene al infinito (sistema inestable).
 
 <img src="https://media.giphy.com/media/gz8cSD9ccm9elGBBkk/giphy.gif" width="560" height="420">
 
