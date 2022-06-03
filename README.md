@@ -199,13 +199,19 @@ En la siguiente simulación se observa el comportamiento del robot indicado en l
 
 b) Modelo con un torque diferente de cero en la primera junta
 
+ Diagrama de bloques en SIMULINK
+
 <img src="/Images/TorqueQ1_DD.JPG" width="740" height="600">
 
 Gráficas
 
+En las siguientes gráficas se observa que el sistema de nuevo es inestable cuando la variable articular presenta un toque de 5 [Nm]. De igual manera al ejemplo anterior, esto se puede deber al efecto de la gravedad y por la falta de elementos disipativos de energía en el sistema.
+
 <img src="/Images/TorqueQ1_DD_Graficas.JPG">
 
 Simulación 
+
+En la simulación se muestra el efecto del torque de 5 [Nm] en la articulación q1, el cual vuelve al sistema inestable, ya que el rango de las curvas de las variables articulares, velocidad y aceleración aumentan, es decir, tienen al infinito. Además se observa que se generan singularidades, ya que algunos eslabones colapsan.
 
 <img src="https://media.giphy.com/media/sWzIVadP0aevM2ay5Y/giphy.gif" width="560" height="420">
 
