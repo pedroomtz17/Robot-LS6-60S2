@@ -83,3 +83,5 @@ Gráficas
 Simulación 
 
 <img src="https://media.giphy.com/media/sWzIVadP0aevM2ay5Y/giphy.gif" width="560" height="420">
+
+## Puntos de Equilibrio
