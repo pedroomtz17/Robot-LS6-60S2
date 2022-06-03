@@ -81,9 +81,9 @@ El movimiento es el esperado, el eslabon 3 se mueve en dirección Z rápidamente
 
 b)Fuerza externa Fx=200N
 
-<img src="Images/FuerzaX200.JPG.jpg" width="560" height="420">
+<img src="Images/FuerzaX200.JPG" width="560" height="420">
 
-<img src="Images/FX200.JPG.jpg" width="560" height="420">
+<img src="Images/FX200_robot.jpg" width="560" height="420">
 
 <img src="Images/AcelArt_Fx.jpg" width="560" height="420">
 
@@ -93,7 +93,7 @@ c)Fuerza externa Fx=20000000N
 
 <img src="Images/FuerzaX200000.JPG" width="560" height="420">
 
-<img src="Images/FX200.JPG.jpg" width="560" height="420">
+<img src="Images/FX200_robot.jpg" width="560" height="420">
 
 <img src="Images/AcelArt_Fx.jpg" width="560" height="420">
 
