@@ -1,5 +1,10 @@
 # Robot-LS6-60S2
 
+## Parámetros Denavit-Hartenberg 
+
+
+<img src="/Images/ParametrosDH.JPG" width="761" height="585">
+
 ## Cinemática Directa
 ```sh
 CD =
@@ -50,3 +55,7 @@ J05 =
  ```sh
  DET = l2*l3*sin(q2)
   ```
+  
+  
+  ## Dinámica directa
+  
