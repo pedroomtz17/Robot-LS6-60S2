@@ -95,3 +95,21 @@ Gráficas
 Simulación 
 
 <img src="/Images/PuntoEquilibrio_DD_Robot.JPG" width="540" height="400">
+
+## Puntos Inestables
+
+- Punto Inestable 1
+
+<img src="/Images/PuntoInestable1_Simulink.JPG" width="740" height="600">
+
+Gráficas
+
+<img src="/Images/PuntoInestable1_Graficas.JPG">
+
+- Punto Inestable 2
+
+<img src="/Images/PuntoInestable2_Simulink.JPG" width="740" height="600">
+
+Gráficas
+
+<img src="/Images/PuntoInestable2_Graficas.JPG">
