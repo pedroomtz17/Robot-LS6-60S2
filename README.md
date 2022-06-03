@@ -24,33 +24,51 @@
   <img src="/Images/Tramo1/CS_T1.png">
  
 ### *Tramo 2*
- <img src="https://media.giphy.com/media/Qm0WXDODcJbrVZdVhL/giphy.gif" width="560" height="420">
+ <img src="https://media.giphy.com/media/GfTWnUMLQzaQgGd9AF/giphy.gif" width="560" height="420">
  
- #### Determinante
-  <img src="/Images/Det_tramo2.jpg">
+#### Determinante
+
+  <img src="/Images/Tramo2/DET_T2.png">
 
 #### Espacio articular
 
-  <img src="/Images/espacio_articular_t2.png">
+  <img src="/Images/Tramo2/JS_T2.png">
   
   #### Espacio cartesiano
-  <img src="/Images/espacio_cartesiano_t2.png">
+  <img src="/Images/Tramo2/CS_T2.png">
   
 ### *Tramo 3*
- <img src="https://media.giphy.com/media/A5lkOuOuDN4bQ3Mz7a/giphy.gif" width="560" height="420">
+ <img src="https://media.giphy.com/media/GZ3ERSQS1uLY8Y4ydQ/giphy.gif" width="560" height="420">
  
- #### Determinante
-  <img src="/Images/Det_tramo3.jpg">
+#### Determinante
+
+  <img src="/Images/Tramo3/DET_T3.png">
 
 #### Espacio articular
 
-  <img src="/Images/espacio_articular_t3.png">
+  <img src="/Images/Tramo3/JS_T3.png">
   
   #### Espacio cartesiano
-  <img src="/Images/espacio_cartesiano_t3.png">
+  <img src="/Images/Tramo3/CS_T3.png">
+  
+  ### *Tramo 4*
+ <img src="https://media.giphy.com/media/Gr2OXWweowp9nXTKgW/giphy.gif" width="560" height="420">
+ 
+#### Determinante
+
+  <img src="/Images/Tramo4/DET_T4.png">
+
+#### Espacio articular
+
+  <img src="/Images/Tramo4/JS_T4.png">
+  
+  #### Espacio cartesiano
+  <img src="/Images/Tramo4/CS_T4.png">
+
 
 ## Rango de movimiento para las articulaciones
 
-#### El rango de movimiento de articulaciones indicado por el fabricante (FANUC), se observa que el rango de movimimiento de las articulaciones es en términos generales amplio. Para el caso de la trayectoria propuesta para cumplir con la tarea de clasifcar tapas de plástico, se observa que ninguno de los tramos viola este rango que se muestra en la imagen inferior.
+#### Las especificaciones resaltan que las articulaciones J1 y J2 están limitadas a una amplitud de 132[°] y 150[°] respectivamente. Mientras que para la junta prismática J3, tiene un desplazamiento vetical máximo de 200 [mm] hacia abajo. 
 
   <img src="/Images/Specs.png">
+ 
