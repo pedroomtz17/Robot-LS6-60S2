@@ -16,9 +16,15 @@ CD =
 ```
 Comprobación
 
+En la siguiente simulación se pueden observar los sistemas de referencia que se establecieron en el modelado previo del robot, así como 
+el movimiento de cada una de las articulaciones
+
 <img src="https://media.giphy.com/media/ENM8XVObYF0KlvLQgh/giphy.gif" width="560" height="420">
 
 ## Cinemática Inversa
+
+A continuación, se muestran 4 puntos que pertenecen a la trayectoria que sigue el efector final del robot para poder tomar una tapa de plástico y colocarla en el contenedor. Observar que el efector final se ubica justamente en la coordenadas indicadas, por lo que se comprueba que la cinemática inversa es correcta.
+
 - Posición 1
 ```sh
         xe=0; ye=0.5; ze=0; gamma=pi;
@@ -52,6 +58,9 @@ J05 =
 [                              0,                0, 1]
  ```
   ## Determinante
+  
+En la ecuación del determinante se observa que solo está en función de la variable articular q2, por lo que se debe tener especial cuidado en dicha articulación al momento definir una trayectoría del robot, ya que se pueden generar singularidades.
+
  ```sh
  DET = l2*l3*sin(q2)
   ```
