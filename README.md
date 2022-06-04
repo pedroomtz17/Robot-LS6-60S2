@@ -325,3 +325,11 @@ d)Fuerza externa Fy=200N
 
 El movimiento es el esperado, la fuerza en Y provoca que el robot pierda su estabilidad, tambien se nota que en todas las juntas tienen aceleración excepto q3. 
 
+
+
+## Conclusiones
+### Juan Manuel Zuleta Ceja
+
+#### La aplicación de la suma de conocimientos adquiridos durante el curso de Robótica, plasmados en este proyecto, concretó el entendimiento de los mismos. Además, al haber sido elaborado este proyecto de forma colaborativa, supuso un reto de comunicación que si bien se logró superar, se resalta la importancia de varios aspectos que dependían de este factor: el conocimiento del robot (para así plantear una representación DH fiel al robot modealdo),comprender el efecto de la arbitrariedad de los valores de entrada en la cinemática y dinámica (inversa y directa), discutir los resultados y su interpretación física en cuanto a que éstas fueran apegadas a la realidad, entre otros.
+#### Otro factor relevante es la capacidad de cómputo con la que se cuenta pues dictó un cambió importante en cuanto a rehacer todo el modelado pero para un robot de menor GDL, pues fue más viable eso a invertir tiempo y trabajo a ecuaciones poco manipulables. 
+#### Por último, queda concluir que el proyecto cumplió su objetivo al ser una síntesis de todo el análisis matemático e ingenieril para el ámbito de la robótica y su irremediable relación con la automatización. 
